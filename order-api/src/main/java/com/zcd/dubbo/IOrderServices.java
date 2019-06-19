@@ -12,4 +12,6 @@ public interface IOrderServices {
      */
     DoOrderResponse doOrder(DoOrderRequest request);
 
+    String dubboException(String name);
+
 }

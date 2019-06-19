@@ -12,6 +12,6 @@
 
     <!--生成一个远程服务的调用代理-->
     <dubbo:reference id="orderServices" interface="com.zcd.dubbo.IOrderServices"
-        url="dubbo://192.168.99.1:20880/com.zcd.dubbo.IOrderServices"/>
+        url="dubbo://10.28.6.181:20880/com.zcd.dubbo.IOrderServices"/>
 
 </beans>

@@ -1,5 +1,7 @@
 package com.zcd.dubbo;
 
+import com.zcd.dubbo.exception.HelloException;
+
 /**
  * 腾讯课堂搜索 咕泡学院
  * 加群获取视频：608583947
@@ -14,5 +16,10 @@ public class OrderServiceImpl implements IOrderServices {
         response.setCode("1000");
         response.setMemo("处理成功");
         return response;
+    }
+
+    @Override
+    public String dubboException(String name) {
+        throw new HelloException("hello" + name);
     }
 }

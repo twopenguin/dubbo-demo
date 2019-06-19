@@ -13,6 +13,7 @@
     <module>order-api</module>
     <module>order-consumer</module>
     <module>order-provider</module>
+    <module>common</module>
   </modules>
 
   <name>dubbo-demo</name>
